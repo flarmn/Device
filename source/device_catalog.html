@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device - главная</title>
+  <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header__general-controls">
+
+
+      <div class="header-left-block">
+
+        <form class="header_search-controls" role="search" aria-label="Поиск по сайту"
+          action="https://echo.htmlacademy.ru" method="get">
+          <input type="text" placeholder="Текст поиска" name="searchTerm" autocomplete="off" autocorrect="off"
+            autocapitalize="off" spellcheck="false">
+          <button class="header__search-button">Найти</button>
+        </form>
+
+        <div class="header__login-block">
+          <div class="header__login-icon"></div>
+          <a class="header_login-link" href="#" title="Авторизоваться на странице">Войти</a>
+        </div>
+
+      </div>
+
+
+      <div class="header-right-block">
+
+        <div class="header__compare-block">
+          <div class="compare-block__icon"></div>
+          <a class="compare-block__link" href="#" title="Сравнить товары">Сравнить</a>
+        </div>
+
+        <div class="header__basket-block">
+          <div class="basket-block__icon"></div>
+          <span class="basket-block__monitor">2</span>
+          <a class="basket-block__link" href="#" title="Корзина">Корзина</a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <nav class="header__main-menu">
+      <div class="main-menu__left-block">
+        <a class = "main-menu__catalog-link" href="#" title="Каталог товаров">Каталог товаров
+          <span class = "main-menu__catalog-icon"></span>
+        </a>
+      </div>
+
+      <div class="main-menu__right-block">
+        <a href="/" title="Доставка">Доставка</a>
+        <a href="#" title="Гарантия">Гарантия</a>
+        <a class="visited" href="#" title="Контакты">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class = "catalog__heading-block">
+      <h1 class ="catalog__heading">Моноподы для селфи</h1>
+      <ul class = "catalog__breadcrumbs">
+        <li><a class="breadcrumbs_item" href="#" title="На главную">Главная</a></li>
+        <li><a class="breadcrumbs_item" href="#" title="Каталог товаров">Каталог товаров</a></li>
+        <li><a class="breadcrumbs_item" href="#" title="К моноподам для селфи">Моноподы для селфи</a></li>
+      </ul>
+    </section>
+
+    <aside class = "sidebar-filters">
+      <form class="sidebar-filters__form" aria-label="Фильтры по продуктам" action="https://echo.htmlacademy.ru" method="get">
+        <h3 class = "sidebar-filters__heading">фильтр:</h3>
+
+        <div class = "sidebar-filters__pricing">
+
+        </div>
+
+        <div class = "sidebar-filters__colors">
+
+        </div>
+
+        <div class = "sidebar-filters__technologies">
+
+        </div>
+
+        <button class = "sidebar-filters__apply-button">Показать</button>
+      </form>
+    </aside>
+
+
+    <section class = "catalog">
+      <div class = "catalog__sorting-panel">
+        <p class = "sorting-panel__caption">сортировка:</p>
+        <select class = "sorting-panel__sorting-mode">
+          <option>Популярные</option>
+          <option>Сначала дешевле</option>
+          <option>Сначала подороже</option>
+        </select>
+        <div class = "sorting-panel__sorting-direction">
+          <button class = "sorting-direction__increasing"></button>
+          <button class = "sorting-direction__decreasing"></button>
+        </div>
+      </div>
+
+      <div class = "catalog__goods-block">
+          <div class='goods-card' aria-label = "Любительская селфи-палка">
+            <img src="/img/content/hotel-amara-resort.jpg" alt="Любительская селфи-палка" class="goods-card__image">
+
+            <div class = "goods-card__info">
+              <p class = "goods-card__description"></p>
+              <p class = "goods-card__price"></p>
+            </div>
+          </div>
+      </div>
+
+      <button class = "catalog__download-more-button">Загрузить ещЁ</button>
+
+      <div class = "catalog__pagination">
+        <button class = "pagination__backward">Назад</button>
+          <ul class = "pagination__page-buttons">
+            <li><a href="#" class="page-buttons__link" title="Переход на страницу каталога">1</a></li>
+            <li><a href="#" class="page-buttons__link" title="Переход на страницу каталога">2</a></li>
+            <li><a href="#" class="page-buttons__link" title="Переход на страницу каталога">3</a></li>
+            <li><a href="#" class="page-buttons__link" title="Переход на страницу каталога">...</a></li>
+            <li><a href="#" class="page-buttons__link" title="Переход на страницу каталога">15</a></li>
+          </ul>
+        <button class = "pagination__forward">Вперед</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class = "footer__logo-row">
+      <div class="footer__device-logo" aria-label="Логотип с переходом на главную HTML Academy"></div>
+    </div>
+
+    <div class = "footer__contacts-row">
+      <p>Санкт-Петербург, набережная
+        реки Карповки, 5, литера П.
+      </p>
+
+      <div class = "footer__menu">
+        <a href="#" class="twitter-icon" title="Доставка">Доставка</a>
+        <a href="#" class="facebook-icon" title="Гарантия">Гарантия</a>
+        <a href="#" class="youtube-icon" title="Контакты">Контакты</a>
+      </div>
+
+      <a class="footer__telephone" href="tel:+78128121212" aria-label="Наш телефон: +7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
+    </div>
+
+
+    <div class = "footer__social-row">
+      <div class = "social-row__decorative-line"></div>
+
+      <div class = "social-row__icon-links">
+        <a href="https://twitter.com/htmlacademy_ru" class="twitter-icon" title="Наша группа во Вкотиакте"></a>
+        <a href="https://www.facebook.com/htmlacademy" class="facebook-icon" title="Наша страницв на Facebook"></a>
+        <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="youtube-icon" title="Наша канал на Youtube"></a>
+      </div>
+
+      <div class="footer__academy-logo" aria-label="Логотип с переходом на главную HTML Academy"></div>
+    </div>
+  </footer>
+
+  <script src="/js/script.min.js"></script>
+</body>
+
+</html>
