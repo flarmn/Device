@@ -9,37 +9,28 @@
 </head>
 
 <body>
+
   <header>
+    <a href="https://htmlacademy.ru/" class="header-logo-link" title="На главную HTML Academy"></a>
     <div class="header__general-controls">
-
-
       <div class="header-left-block">
 
         <form class="header_search-controls" role="search" aria-label="Поиск по сайту"
           action="https://echo.htmlacademy.ru" method="get">
           <input type="text" placeholder="Текст поиска" name="searchTerm" autocomplete="off" autocorrect="off"
-            autocapitalize="off" spellcheck="false">
+            autocapitalize="off" spellcheck="false" class = "search-controls__text-input">
           <button class="header__search-button">Найти</button>
         </form>
 
-        <div class="header__login-block">
-          <div class="header__login-icon"></div>
-          <a class="header_login-link" href="#" title="Авторизоваться на странице">Войти</a>
-        </div>
-
+        <a class="header_login-link" href="#" title="Авторизоваться на странице">Войти</a>
       </div>
 
 
       <div class="header-right-block">
 
-        <div class="header__compare-block">
-          <div class="compare-block__icon"></div>
-          <a class="compare-block__link" href="#" title="Сравнить товары">Сравнить</a>
-        </div>
-
+        <a class="compare-block__link" href="#" title="Сравнить товары">Сравнить</a>
         <div class="header__basket-block">
-          <div class="basket-block__icon"></div>
-          <span class="basket-block__monitor">2</span>
+          <span class="basket-block__screen">2</span>
           <a class="basket-block__link" href="#" title="Корзина">Корзина</a>
         </div>
 
@@ -50,15 +41,14 @@
 
     <nav class="header__main-menu">
       <div class="main-menu__left-block">
-        <a class="main-menu__catalog-link" href="#" title="Каталог товаров">Каталог товаров
-          <span class="main-menu__catalog-icon"></span>
-        </a>
+        <a class="main-menu__catalog-link" href="#" title="Каталог товаров">Каталог товаров</a>
+        <div class = "catalog-link__plus-sign">+</div>
       </div>
 
       <div class="main-menu__right-block">
-        <a href="/" title="Доставка">Доставка</a>
-        <a href="#" title="Гарантия">Гарантия</a>
-        <a class="visited" href="#" title="Контакты">Контакты</a>
+        <a class = "right-block__item" href="/" title="Доставка">Доставка</a>
+        <a class = "right-block__item" href="#" title="Гарантия">Гарантия</a>
+        <a class = "right-block__item" href="#" title="Контакты">Контакты</a>
       </div>
     </nav>
   </header>

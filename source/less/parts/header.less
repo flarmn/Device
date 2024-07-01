@@ -1,11 +1,232 @@
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  background-color: white;
+  flex-direction: column;
+  height: 175px;
+  background-color: @device-yellow;
+  margin-top: 42px;
+
+
+  .header-logo-link {
+    position: absolute;
+    transform: translateY(-70%) translateX(60px);
+    background: url("/img/logo/device_logo.svg");
+    width: 145px;
+    height: 36px;
+  }
+
+  a {
+    text-decoration: none;
+    color: @device-black;
+  }
 }
 
+.header__general-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  xxbackground-color: silver;
+  margin-top: 42px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  .header-left-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-right-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .header_search-controls {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0;
+    align-items: center;
+  }
+
+
+  .header_login-link {
+    width: 81px;
+    background: red;
+    text-align: right;
+    background: url('/img/icons/profile.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+    margin-left: 26px;
+
+    font-family: "Rubik Normal";
+    font-size: 18px;
+    line-height: 30px;
+    color: @device-black;
+    xxletter-spacing: 0.08em;
+  }
+}
+
+
+.header_search-controls {
+  .search-controls__text-input {
+    box-sizing: border-box;
+    width: 359px;
+    height: 40px;
+    border: solid 2px @device-black;
+    border-radius: 50px 0px 0px 50px;
+    background-color: transparent;
+    padding: 0;
+    padding-left: 44px;
+    background-image: url("/img/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+
+
+  }
+
+  .search-controls__text-input::placeholder,
+  .header__search-button {
+    font-family: "Rubik Normal";
+    font-size: 16px;
+    line-height: 20px;
+    color: @device-black;
+    xxletter-spacing: 0.08em;
+  }
+
+  .header__search-button {
+    width: 160px;
+    height: 40px;
+    border: solid 2px @device-black;
+    border-radius: 0px 50px 50px 0px;
+    border-left-style: none;
+    background-color: transparent;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+.compare-block__link, .basket-block__link{
+  height:30px;
+
+  font-family: "Rubik Normal";
+  font-size: 18px;
+  line-height: 30px;
+  color: @device-black;
+  xxletter-spacing: 0.08em;
+  text-align: right;
+
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  xxbackground-color: red;
+
+}
+
+.compare-block__link{
+  display: block;
+  width: 107px;
+  background-image: url("/img/icons/compare.svg");
+  margin-right: 36px;
+  background-position: 0px 50%;
+}
+
+.header__basket-block{
+display: flex;
+align-items: center;
+}
+
+.basket-block__link{
+  display: block;
+  box-sizing: border-box;
+  width: 98px;
+  background-image: url("/img/icons/busket.svg");
+  xxbackground-color: green;
+  background-position: -3px 30%;
+}
+
+.basket-block__screen{
+  display: flex;
+  font-family: "Rubik Normal";
+  font-size: 14px;
+  line-height: 16px;
+  color: @device-black;
+  width: 21px;
+  height:21px;
+  background-color: white;
+
+  align-items: center;
+  justify-content: center;
+
+
+  border-radius: 50%;
+  margin-left: -18px;
+  position:absolute;
+
+}
+
+
+.header__main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding-left: 60px;
+  padding-right:60px;
+
+  .main-menu__left-block{
+    display:flex;
+    align-items: center;
+  }
+}
+
+.main-menu__catalog-link{
+  font-family: "Raleway Bold";
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+
+.catalog-link__plus-sign{
+  box-sizing: border-box;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: solid 2px @device-black;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+
+  font-family: "Rubik Normal";
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 37px;
+  color: @device-black;
+}
+
+
+.main-menu__right-block{
+  display: flex;
+  align-items: center;
+
+
+}
+
+.right-block__item{
+  font-family: "Raleway Bold";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: @device-black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: 50px;
+  padding:0;
+}
+
+
+
+
+/*
 .header-left-block {
   display: flex;
   width: 80%;
@@ -99,3 +320,4 @@ header {
     flex-shrink: 0;
   }
 }
+*/
