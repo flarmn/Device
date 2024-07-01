@@ -65,7 +65,46 @@
 
   <main>
     <section class="featured-goods-slider">
-      
+      <div class="featured-goods-slider__number-panel">
+        <p class="number-panel__number">01</p>
+      </div>
+      <div class="featured-goods-slider__screens">
+        <div class="featured-goods-slider__images-screen">
+          <div class="images-screen__arrows-control">
+            <div class="arrows-control__left-arrow"></div>
+            <div class="arrows-control__right-arrow"></div>
+          </div>
+        </div>
+
+        <div class="featured-goods-slider__texts-screen">
+          <h3 class="texts-screen__heading">Порхает как бабочка,
+            жалит как пчела!</h3>
+          <p class="texts-screen__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+            замаскированным под стандартную камеру.</p>
+
+          <div class="texts-screen__controls">
+            <a class="catalog__button" href="#" title="Подробнее">Подробнее</a>
+            <div class="texts-screen__slides-switching-controls">
+              <a class="slides-switching-controls__item slides-switching-controls__item--active" href="#"
+                title="Переключиться на слайд про"></a>
+              <a class="slides-switching-controls__item" href="#" title="Переключиться на слайд про"></a>
+              <a class="slides-switching-controls__item" href="#" title="Переключиться на слайд про"></a>
+            </div>
+          </div>
+
+          <div class="texts-screen__characteristics">
+            <div class="characteristics__item">
+              <p class="item-caption">800 м</p>
+              <p class="item-description">Дальность полета</p>
+            </div>
+
+            <div class="characteristics__item">
+              <p class="item-caption">50 м</p>
+              <p class="item-description">Радиус поражения</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="category-cards">
@@ -111,7 +150,7 @@
         <li><a class="delivery-menu__item" href="#" title="Кредит">Кредит</a></li>
       </ul>
 
-      <div class = "delivery-block__info">
+      <div class="delivery-block__info">
         <h3>Доставка</h3>
         <p class="info__text">Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно! Ведь
@@ -120,13 +159,13 @@
     </section>
 
     <section class="deliver-block__message">
-        <div class = "message__left-icon"></div>
-        <p class = "meassage__text">Доставим редкий товар под заказ</p>
-        <div class = "message__info-icon"></div>
+      <div class="message__left-icon"></div>
+      <p class="meassage__text">Доставим редкий товар под заказ</p>
+      <div class="message__info-icon"></div>
     </section>
 
     <section class="general-info">
-      <div class = "general-info__about-us">
+      <div class="general-info__about-us">
         <h3>О нас</h3>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -136,38 +175,40 @@
           <li>ТоксБерри</li>
         </ul>
 
-        <a class = "catalog__button" href="#" title="Подробнее о нас">Подробнее о нас</a>
+        <a class="catalog__button" href="#" title="Подробнее о нас">Подробнее о нас</a>
       </div>
 
-      <div class = "general-info__contacts">
+      <div class="general-info__contacts">
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис.
           Заодно сможете проверить работоспособность покупки.</p>
         <h4>Интернет-магазин «Девайс»</h4>
         <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <a class="contacts__telephone" href="tel:+78128121212" aria-label="Наш телефон: +7 (812) 812-12-12">+7 (812) 812-12-12</a>
+        <a class="contacts__telephone" href="tel:+78128121212" aria-label="Наш телефон: +7 (812) 812-12-12">+7 (812)
+          812-12-12</a>
 
         <h5>Время работы</h5>
         <p>пн—пт: с 10:00 до 22:00</p>
         <p>сб—вс: с 10:00 до 19:00</p>
 
-        <a class = "catalog__button" href="#" title="Подробнее о нас">Напишите нам</a>
+        <a class="catalog__button" href="#" title="Подробнее о нас">Напишите нам</a>
       </div>
     </section>
 
     <section class="subscription-block">
-      <div class = "subscription-block__info-text">
-        <div class = "info-text__heading">Подпишитесь на рассылку</div>
-        <p class = "info-text__description">Еженедельный дайджест с обзорами новинок,
+      <div class="subscription-block__info-text">
+        <div class="info-text__heading">Подпишитесь на рассылку</div>
+        <p class="info-text__description">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
       </div>
-      <form class = "subscription-form" action="https://echo.htmlacademy.ru" method="get">
-        <div class = "subscription-form__inputs">
-          <input type="email" class="email-field" id="subscriptionEmail" name="subscriptionEmail" placeholder="Ваш e-mail">
+      <form class="subscription-form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="subscription-form__inputs">
+          <input type="email" class="email-field" id="subscriptionEmail" name="subscriptionEmail"
+            placeholder="Ваш e-mail">
           <input type="button" value="Подписаться" class="form-button">
         </div>
-        <label class = "subscription-form__info-label">Это бесплатно</label>
+        <label class="subscription-form__info-label">Это бесплатно</label>
       </form>
     </section>
   </main>
