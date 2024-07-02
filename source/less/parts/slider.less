@@ -1,0 +1,186 @@
+.featured-goods-slider {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  width: 1160px;
+  height: 560px;
+  margin: auto;
+}
+
+
+.featured-goods-slider__number-panel {
+  display: flex;
+  height: 115px;
+  xxbackground-color: @device-yellow;
+  background-color: green;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.number-panel__number {
+  font-family: "Rubik Bold";
+  font-size: 160px;
+  line-height: 33px;
+  margin-right: 49px;
+  color: @device-white;
+  padding: 0;
+  margin-top: 5px;
+
+  letter-spacing: 0.05em;
+}
+
+.featured-goods-slider__screens {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  xxbackground: silver;
+  xxheight: 560px;
+  transform: translateY(-32%);
+  column-gap: 40px;
+}
+
+.featured-goods-slider__images-screen {
+  height: 560px;
+  xxbackground: violet;
+  transform: translateY(7%);
+
+  .images-screen__arrows-control {
+    display: flex;
+    justify-content: space-between;
+    xxalign-items: center;
+    height: 60px;
+    width: 95%;
+    margin-left: 5%;
+    transform: translateY(-590%);
+  }
+
+  .arrows-control__left-arrow {
+    width: 20px;
+    height: 60px;
+    background-image: url("/img/icons/arrow-right.svg");
+    transform: scaleX(-1);
+
+  }
+
+  .arrows-control__right-arrow {
+    width: 20px;
+    height: 60px;
+    background-image: url("/img/icons/arrow-right.svg");
+  }
+}
+
+
+
+
+.featured-goods-slider__texts-screen {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  xxjustify-content: space-between;
+  background: yellow;
+
+  .texts-screen__heading {
+    box-sizing: border-box;
+    font-family: "Raleway Bold";
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .texts-screen__description {
+    box-sizing: border-box;
+    font-family: "Rubik Normal";
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 29px;
+    xxtransform: translateY(85%);
+  }
+
+
+
+  .texts-screen__characteristics {
+    display: flex;
+    margin-top: 49px;
+  }
+}
+
+.texts-screen__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 31px;
+
+  .catalog__button {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 220px;
+
+    font-family: "Raleway Bold";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    xxtext-align: center;
+    justify-content: center;
+
+    color: @device-black;
+    background-image: linear-gradient(#ffe17f 0%, #ffe17f 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 8px;
+    background-position: center;
+  }
+
+  .texts-screen__slides-switching-controls {
+    display: flex;
+    xxjustify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+}
+
+.texts-screen__slides-switching-controls {
+  .slides-switching-controls__item {
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    margin-left: 20px;
+    border: solid 2px @device-black;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .slides-switching-controls__item--active {
+    background-color: @device-black;
+  }
+}
+
+
+.characteristics__item {
+  font-family: "Rubik Normal";
+  font-weight: 400;
+  line-height: 30px;
+  margin-right: 20px;
+
+  p{
+    padding:0;
+    margin:0;
+  }
+
+  .item-caption{
+    font-size: 36px;
+    margin-bottom:12px;
+  }
+
+  .item-description{
+    font-size: 16px;
+    color: #444444;
+
+  }
+}
