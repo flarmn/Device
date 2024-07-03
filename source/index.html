@@ -18,7 +18,7 @@
         <form class="header_search-controls" role="search" aria-label="Поиск по сайту"
           action="https://echo.htmlacademy.ru" method="get">
           <input type="text" placeholder="Текст поиска" name="searchTerm" autocomplete="off" autocorrect="off"
-            autocapitalize="off" spellcheck="false" class = "search-controls__text-input">
+            autocapitalize="off" spellcheck="false" class="search-controls__text-input">
           <button class="header__search-button">Найти</button>
         </form>
 
@@ -42,13 +42,13 @@
     <nav class="header__main-menu">
       <div class="main-menu__left-block">
         <a class="main-menu__catalog-link" href="#" title="Каталог товаров">Каталог товаров</a>
-        <div class = "catalog-link__plus-sign">+</div>
+        <div class="catalog-link__plus-sign">+</div>
       </div>
 
       <div class="main-menu__right-block">
-        <a class = "right-block__item" href="/" title="Доставка">Доставка</a>
-        <a class = "right-block__item" href="#" title="Гарантия">Гарантия</a>
-        <a class = "right-block__item" href="#" title="Контакты">Контакты</a>
+        <a class="right-block__item" href="/" title="Доставка">Доставка</a>
+        <a class="right-block__item" href="#" title="Гарантия">Гарантия</a>
+        <a class="right-block__item" href="#" title="Контакты">Контакты</a>
       </div>
     </nav>
   </header>
@@ -60,7 +60,7 @@
       </div>
       <div class="featured-goods-slider__screens">
         <div class="featured-goods-slider__images-screen">
-          <img class = "images-screen__image" src = "/img/content/slider/quadcopter@1x.png" alt = "" width="560" height = "560">
+          <img class="images-screen__image" src="/img/content/slider/quadcopter@1x.png" alt="" width="560" height="560">
           <div class="images-screen__arrows-control">
             <div class="arrows-control__left-arrow"></div>
             <div class="arrows-control__right-arrow"></div>
@@ -133,19 +133,21 @@
     </section>
 
     <section class="delivery-block">
-      <ul class="delivery-menu">
-        <li><a class="delivery-menu__item delivery-menu__item--active" href="#" title="Доставка">Доставка</a></li>
+      <div class="delivery-block-wrapper">
+        <ul class="delivery-menu">
+          <li class="delivery-menu__item delivery-menu__item--active"><a class="delivery-menu__link" href="#" title="Доставка">Доставка</a></li>
 
-        <li><a class="delivery-menu__item" href="#" title="Гарантия">Гарантия</a></li>
+          <li class="delivery-menu__item"><a class="delivery-menu__link" href="#" title="Гарантия">Гарантия</a></li>
 
-        <li><a class="delivery-menu__item" href="#" title="Кредит">Кредит</a></li>
-      </ul>
+          <li class="delivery-menu__item"><a class="delivery-menu__link" href="#" title="Кредит">Кредит</a></li>
+        </ul>
 
-      <div class="delivery-block__info">
-        <h3>Доставка</h3>
-        <p class="info__text">Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно! Ведь
-          мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <div class="delivery-block__info">
+          <h3 class = "block-info__heading">Доставка</h3>
+          <p class="info__text">Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно! Ведь
+            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
       </div>
     </section>
 

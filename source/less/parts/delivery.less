@@ -1,0 +1,115 @@
+.delivery-block{
+  box-sizing: border-box;
+  display:flex;
+  justify-content: center;
+  height: 391px;
+  xxbackground-color: violet;
+
+  background-image: linear-gradient(@device-light 0%, @device-light 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 289px;
+  background-position: bottom;
+  margin-top: 75px;
+}
+
+.delivery-block-wrapper{
+  display: flex;
+  align-items: center;
+  width:1160px;
+  height: 319px;
+
+  xxbackground-color: blue;
+
+
+  .delivery-block__info{
+    display:flex;
+    flex-direction: column;
+    width:694px;
+    height:174px;
+    xxbackground:yellow;
+    margin-left: 116px;
+
+    background-image: url("/img/icons/delivery.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+}
+
+.delivery-menu{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  list-style: none;
+  padding:0;
+  margin:0;
+  height: 319px;
+  width: 287px;
+  xxbackground-color: silver;
+  border-right: solid 7px black;
+  margin-top:30px;
+
+  .delivery-menu__item{
+    display:flex;
+    align-items: center;
+    height:40px;
+    text-decoration: none;
+    xxmargin-top: 30px;
+    margin-bottom:35px;
+  }
+
+  .delivery-menu__item--active, .delivery-menu__item--active > a{
+    background: @device-black;
+    color:@device-yellow;
+  }
+
+  .delivery-menu__link{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 160px;
+
+    font-family: "Raleway Bold";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    justify-content: center;
+
+    color: @device-black;
+
+    background-image: linear-gradient(#ffe17f 0%, #ffe17f 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 8px;
+    background-position: center;
+
+  }
+}
+
+
+
+.delivery-block__info{
+  .block-info__heading{
+    margin:0;
+    padding:0;
+    font-family: "Raleway Bold";
+    font-size: 50px;
+    line-height: 50px;
+    color: @device-black;
+    margin-bottom: 34px;
+  }
+
+  .info__text{
+    margin:0;
+    padding:0;
+    width: 448px;
+    font-family: "Rubik Normal";
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+
+  }
+}

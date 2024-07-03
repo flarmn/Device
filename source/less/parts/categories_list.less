@@ -1,0 +1,79 @@
+.category-cards {
+  display: flex;
+  height: 253px;
+  justify-content: space-between;
+  justify-items: center;
+  width: 1160px;
+  margin:auto;
+  margin-top: 40px;
+}
+
+
+.category-cards__item{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 160px;
+
+  .item-image{
+    width: 160px;
+    height: 160px;
+    background-color: @device-yellow;
+    background-repeat: no-repeat;
+    background-position: center;
+    xxmargin-bottom:60px;
+  }
+
+  .item-caption{
+    box-sizing: border-box;
+    display: flex;
+    height: calc(100% - 160px);
+    align-items:flex-start;
+
+
+    font-family: "Raleway Bold";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.35px;
+    transform: translateY(38px);
+  }
+}
+
+.category-cards__item:nth-child(1){
+  .item-image{
+    background-image: url("/img/icons/virtual_reality.svg");
+  }
+}
+
+.category-cards__item:nth-child(2){
+  .item-image{
+    background-image: url("/img/icons/monopod.svg");
+    background-position: bottom;
+  }
+}
+
+.category-cards__item:nth-child(3){
+  .item-image{
+    background-image: url("/img/icons/action_cam.svg");
+
+  }
+}
+
+
+.category-cards__item:nth-child(4){
+  .item-image{
+    background-image: url("/img/icons/fitnes_bracelet.svg");
+  }
+}
+
+.category-cards__item:nth-child(5){
+  .item-image{
+    background-image: url("/img/icons/smart_watch.svg");
+  }
+}
+
+.category-cards__item:nth-child(6){
+  .item-image{
+    background-image: url("/img/icons/quadcopter.svg");
+  }
+}
