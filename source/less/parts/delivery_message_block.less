@@ -1,0 +1,52 @@
+.deliver-block__message {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  height: 100px;
+  background-color: @device-light;
+  margin: auto;
+  margin-top: 70px;
+
+  .message__left-icon,
+  .message__info-icon {
+    width: 125px;
+    height: 100px;
+  }
+
+  .message__left-icon {
+    background-color: @device-yellow;
+    background-image: url("/img/icons/delivery_car.svg");
+    background-repeat: no-repeat;
+    xxbackground-size: 100% 8px;
+    background-position: center;
+  }
+
+  .meassage__text{
+    font-family: "Raleway Bold";
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: @device-black;
+  }
+
+
+}
+
+.message__info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: @device-grey;
+  }
+}
